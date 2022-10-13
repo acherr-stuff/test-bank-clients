@@ -1,0 +1,17 @@
+<div class="container">
+    <h1 class="header">TABLE OF BANK CLIENTS</h1>
+    <table class="clients-table">
+        <thead class="clients-table__head">
+            <tr>
+              <th>Name</th>
+              <th>Gender</th>
+              <th>Date of Birth</th>
+            </tr>
+        </thead>
+        <tbody class="clients-table__body">
+            <tr app-clients-item *ngFor="let item of clientsData" [client]="item">
+                    <button (click)="deleteItem(item.card)">Delete</button>
+            </tr>
+        </tbody>
+    </table>
+</div>

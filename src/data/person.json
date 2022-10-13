@@ -1,0 +1,48 @@
+{
+  "clients": [
+    {
+      "card": "481/YY-P",
+      "firstname": "Jordan",
+      "lastname": "Bauer",
+      "gender": "male",
+      "date_of_birth": "17.03.1986",
+      "email": "jordan.bauer@snorus.net",
+      "phone": "+1 (901) 404-2928",
+      "address": "712 Bills Place, Cochranville, Florida, 6951",
+      "contracts_count": 5
+    },
+    {
+      "card": "497/YY-P",
+      "firstname": "Bass",
+      "lastname": "Church",
+      "gender": "male",
+      "date_of_birth": "11.09.1996",
+      "email": "bass.church@accruex.com",
+      "phone": "+1 (881) 403-2661",
+      "address": "786 Ira Court, Abiquiu, Kentucky, 1055",
+      "contracts_count": 1
+    },
+    {
+      "card": "501/YY-P",
+      "firstname": "Mabel",
+      "lastname": "Holt",
+      "gender": "female",
+      "date_of_birth": "10.09.1968",
+      "email": "mabel.holt@malathion.io",
+      "phone": "+1 (951) 520-3392",
+      "address": "890 Alice Court, Bath, New Hampshire, 6400",
+      "contracts_count": 6
+    },
+    {
+      "card": "513/YY-P",
+      "firstname": "Lambert",
+      "lastname": "Higgins",
+      "gender": "male",
+      "date_of_birth": "08.02.1977",
+      "email": "lambert.higgins@geekology.name",
+      "phone": "+1 (957) 573-3207",
+      "address": "513 Schroeders Avenue, Moquino, Connecticut, 6353",
+      "contracts_count": 8
+    }
+  ]
+}
