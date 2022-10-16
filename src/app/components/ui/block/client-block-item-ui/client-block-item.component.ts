@@ -6,13 +6,10 @@ import {Client} from "../../../../clients";
   templateUrl: './client-block-item.component.html',
   styleUrls: ['./client-block-item.component.scss']
 })
-export class ClientBlockItemComponent implements OnInit {
+export class ClientBlockItemComponent  {
 
   @Input() client: Client;
 
   constructor() { }
-
-  ngOnInit(): void {
-  }
 
 }

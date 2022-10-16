@@ -3,16 +3,13 @@ import {Client} from "../../../../clients";
 
 @Component({
   selector: '[app-clients-item]',
-  templateUrl: './clients-item.component.html',
-  styleUrls: ['./clients-item.component.scss']
+  templateUrl: './clients-table-item.component.html',
+  styleUrls: ['./clients-table-item.component.scss']
 })
-export class ClientsItemComponent implements OnInit {
+export class ClientsTableItemComponent  {
 
   @Input() client: Client;
   constructor() {
-  }
-
-  ngOnInit(): void {
   }
 
 }

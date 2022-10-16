@@ -5,13 +5,9 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './clients-block-page.component.html',
   styleUrls: ['./clients-block-page.component.scss']
 })
-export class ClientsBlockPageComponent implements OnInit {
+export class ClientsBlockPageComponent  {
 
   constructor() {
   }
-
-  ngOnInit(): void {
-  }
-
 
 }

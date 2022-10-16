@@ -1,5 +1,5 @@
 import {Component, EventEmitter, OnInit, Output} from '@angular/core';
-import {Client} from "../../clients";
+import {Client} from "../../../clients";
 import {FormControl, FormGroup, Validators} from "@angular/forms";
 
 @Component({
@@ -37,7 +37,6 @@ export class ClientsItemAddComponent implements OnInit {
 
 
   onCreate() {
-    console.log("new client data: ", this.addClientForm.getRawValue());
     this.addClientEvent.emit(this.addClientForm.getRawValue())
   }
 

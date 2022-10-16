@@ -7,7 +7,7 @@ import {Client} from "../../../../clients";
   templateUrl: './clients-block-list.component.html',
   styleUrls: ['./clients-block-list.component.scss']
 })
-export class ClientsBlockListComponent implements OnInit {
+export class ClientsBlockListComponent  {
 
   clientsData: Client[]
 
@@ -25,9 +25,6 @@ export class ClientsBlockListComponent implements OnInit {
 
   addNewClient(event$) {
     this.clientsDataService.addNewClient(event$)
-  }
-
-  ngOnInit(): void {
   }
 
 }

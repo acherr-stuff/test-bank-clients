@@ -1,14 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import {ClientsDataService} from "../../../../services/clients-data.service";
 import {Client} from "../../../../clients";
-import {FormControl, FormGroup} from "@angular/forms";
 
 @Component({
   selector: 'app-clients-list',
-  templateUrl: './clients-list.component.html',
-  styleUrls: ['./clients-list.component.scss']
+  templateUrl: './clients-table-list.component.html',
+  styleUrls: ['./clients-table-list.component.scss']
 })
-export class ClientsListComponent implements OnInit {
+export class ClientsTableListComponent  {
 
   clientsData: Client[]
 
@@ -19,9 +18,6 @@ export class ClientsListComponent implements OnInit {
       this.clientsData = value;
       console.log((this.clientsData))
     })
-  }
-
-  ngOnInit(): void {
   }
 
   deleteItem(id: string) {
