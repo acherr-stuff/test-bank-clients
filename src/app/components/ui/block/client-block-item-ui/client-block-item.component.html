@@ -1,0 +1,25 @@
+<ng-container>
+    <h3 class="client-name">
+        {{client.firstname}} {{client.lastname}}
+    </h3>
+    <div class="client-field">
+        <b>Card:</b> {{client.card}}
+    </div>
+    <div class="client-field">
+        <b>Date of Birth:</b> {{client.date_of_birth}}
+    </div>
+    <div class="client-field">
+        <b>Phone Number:</b> {{client.phone}}
+    </div>
+    <div class="client-field">
+        <b>E-mail:</b> {{client.email}}
+    </div>
+    <div class="client-field">
+        <b>Address:</b> {{client.address}}
+    </div>
+    <div class="client-field">
+        <b>Count of contracts:</b> {{client.contracts_count}}
+    </div>
+    <ng-content></ng-content>
+</ng-container>
+

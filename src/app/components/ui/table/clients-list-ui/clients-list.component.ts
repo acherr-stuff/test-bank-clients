@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {ClientsDataService} from "../../services/clients-data.service";
-import {Client} from "../../clients";
+import {ClientsDataService} from "../../../../services/clients-data.service";
+import {Client} from "../../../../clients";
+import {FormControl, FormGroup} from "@angular/forms";
 
 @Component({
   selector: 'app-clients-list',
@@ -16,6 +17,7 @@ export class ClientsListComponent implements OnInit {
   ) {
     this.clientsDataService.clientsData$.subscribe( value => {
       this.clientsData = value;
+      console.log((this.clientsData))
     })
   }
 
@@ -24,6 +26,11 @@ export class ClientsListComponent implements OnInit {
 
   deleteItem(id: string) {
     this.clientsDataService.deleteClient(id);
+
+  }
+
+  addNewClient(event$) {
+    this.clientsDataService.addNewClient(event$)
   }
 
 }

@@ -26,4 +26,9 @@ export class ClientsDataService {
     const newData = this.clientsData$.getValue().filter(item => item.card !== id)
     this.clientsData$.next(newData)
   }
+
+  addNewClient(client: Client) {
+    const newData = [...this.clientsData$.getValue(), client];
+    this.clientsData$.next(newData);
+  }
 }

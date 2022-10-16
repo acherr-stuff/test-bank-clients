@@ -1,0 +1,23 @@
+<div class="container">
+    <table class="clients-table" *ngIf="clientsData.length > 0; else placeholder">
+        <thead class="clients-table__head">
+            <tr>
+              <th>NAME</th>
+              <th>CARD</th>
+              <th>DATE OF BIRTH</th>
+              <th>PHONE NUMBER</th>
+              <th>E-MAIL</th>
+              <th>ADDRESS</th>
+              <th>COUNT OF CONTRACTS</th>
+              <th></th>
+            </tr>
+        </thead>
+        <tbody class="clients-table__body">
+            <tr app-clients-item *ngFor="let item of clientsData" [client]="item">
+                    <a class="btn-delete" role="button" (click)="deleteItem(item.card)">DELETE</a>
+            </tr>
+        </tbody>
+    </table>
+    <ng-template #placeholder>No items</ng-template>
+    <app-clients-item-add (addClientEvent)="addNewClient($event)"></app-clients-item-add>
+</div>

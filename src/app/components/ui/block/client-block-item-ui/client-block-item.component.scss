@@ -1,0 +1,16 @@
+.client-name {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.client-field {
+  font-size: 14px;
+}
+
+:host {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+

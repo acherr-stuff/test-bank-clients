@@ -1,0 +1,8 @@
+<div class="container">
+    <div class="clients">
+        <app-client-block-item class="client" *ngFor="let client of clientsData" [client]="client">
+            <a class="delete" role="button" (click)="deleteItem(client.card)">DELETE</a>
+        </app-client-block-item>
+    </div>
+    <app-clients-item-add (addClientEvent)="addNewClient($event)"></app-clients-item-add>
+</div>

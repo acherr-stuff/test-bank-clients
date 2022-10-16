@@ -1,1 +1,53 @@
-<p>clients-item-add works!</p>
+<div class="container">
+    <h3>ADD NEW USER</h3>
+    <form class="add-user-form" action="#" [formGroup]="addClientForm" (ngSubmit)="onCreate()">
+        <h4>Main info</h4>
+        <div class="input-row">
+            <div class="input-wrapper">
+                <input type="text" formControlName="firstname"  placeholder="First Name*">
+                <div class="error" *ngIf="firstname.invalid && (firstname.dirty || firstname.touched) && firstname.errors?.['required']">
+                    First Name is required.
+                </div>
+            </div>
+            <div class="input-wrapper">
+                <input type="text" formControlName="lastname"  placeholder="Last Name*">
+                <div class="error" *ngIf="lastname.invalid && (lastname.dirty || lastname.touched) && lastname.errors?.['required']">
+                    First Name is required.
+                </div>
+            </div>
+            <div class="input-wrapper">
+                <input type="text" formControlName="card"  placeholder="Card*">
+                <div class="error" *ngIf="card.invalid && (card.dirty || card.touched) && card.errors?.['required']">
+                    Card is required.
+                </div>
+            </div>
+        </div>
+        <div class="input-row">
+            <input type="text" formControlName="date_of_birth"  placeholder="Date of Birth">
+        </div>
+        <h4>Contacts</h4>
+        <div class="input-row">
+            <div class="input-wrapper">
+                <input type="text" formControlName="phone"  placeholder="Phone number">
+            </div>
+            <div class="input-wrapper">
+                <input type="text" formControlName="email"  placeholder="E-mail">
+                <div class="error" *ngIf="email.invalid && (email.dirty || email.touched) && email.errors?.['email']">
+                    E-mail should contain "@" sybmol.
+                </div>
+            </div>
+        </div>
+        <h4>Address</h4>
+        <div class="input-row">
+            <input type="text" formControlName="address"  placeholder="Address">
+        </div>
+        <h4>Contracts</h4>
+        <div class="input-row">
+            <input type="text" formControlName="contracts_count"  placeholder="Count of contracts">
+        </div>
+        <div class="input-row">
+            <button class="create" [disabled]="!addClientForm.valid" type="submit">CREATE</button>
+        </div>
+    </form>
+</div>
+

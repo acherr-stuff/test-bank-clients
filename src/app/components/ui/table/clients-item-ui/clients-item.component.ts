@@ -1,5 +1,5 @@
-import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
-import {Client} from "../../clients";
+import {Component, Input, OnInit} from '@angular/core';
+import {Client} from "../../../../clients";
 
 @Component({
   selector: '[app-clients-item]',
@@ -9,8 +9,8 @@ import {Client} from "../../clients";
 export class ClientsItemComponent implements OnInit {
 
   @Input() client: Client;
-  @Output() delete: EventEmitter<any> = new EventEmitter();
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
   }

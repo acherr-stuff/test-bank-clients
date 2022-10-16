@@ -1,0 +1,46 @@
+.name {
+  text-align: center;
+}
+
+td {
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: #ddd;
+  //background: gray;
+  padding: 10px 15px;
+}
+
+:host:nth-child(2n) td {
+  background: #F8F8F8;
+}
+
+:host:last-child td:first-child {
+  border-radius: 0 0 0 20px;
+}
+
+:host:last-child td:last-child {
+  border-radius: 0 0 20px 0;
+}
+//
+//td::after {
+//  display: block;
+//  content: attr();
+//  font-weight: 600;
+//  color: transparent;
+//  height: 1px;
+//  margin-bottom: -1px;
+//  visibility: hidden;
+//  overflow: hidden;
+//}
+
+//:host:hover td::after {
+//  content: "";
+//  //content: attr(data-text);
+//  //content: attr(data-text) / "";
+//  height: 1px;
+//  visibility: visible;
+//  overflow: hidden;
+//  user-select: none;
+//  pointer-events: none;
+//  font-weight: 700;
+//}
